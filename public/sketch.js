@@ -9,7 +9,7 @@ function setup() {
     //socket.on('match', result);
     createCanvas(1000, 500);
     noStroke();
-    vid = createVideo('asset/tranp5.mov', vidLoad);
+    vid = createVideo('asset/tranp4.mov', vidLoad);
     vid.size(900, 450);
     vid.position(275, 145);
     vid.pause();
@@ -30,7 +30,7 @@ let r = 100;
 let cnt = 0;
 function draw() {
   background(0);
-  if(keyIsPressed){
+  if(key == 'a'){
     vid.play();
   }
   else{
